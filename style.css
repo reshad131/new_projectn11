@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Anta&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Marhey:wght@300..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.body{
+    color: teal;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__links{
+    color: rgb(28, 28, 133);
+}
+
+ul li a{
+    position: relative;
+    margin-right: 20px;
+}
+
+.header-btn{
+    font-family: "Josefin Sans", sans-serif;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 15px 40px;
+    display: inline-block;
+    background-color: #FFC800;
+}
+
+ul li{
+    display: flex;
+    display: inline-block;
+    margin-left: 60px;
+    font-size: 25px;
+    cursor: pointer;
+}
+ul li {
+    position: relative;
+}
+
+ul li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: blue;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+ul li:hover::after {
+    width: 100%;
+}
+
+
+
+.text{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 30px;
+    color: rgb(28, 28, 133);
+}
+
+h1{
+    top: 25%;
+}
+#texts{
+    content: "";
+    height: 11px;
+    background: #FFC800;
+    width: 35%;
+    display: inline-block;
+    top: 30%;
+    z-index: -1;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+
+
+
+.background{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://preview.colorlib.com/theme/tralive/assets/img/hero/h1_hero1.png.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+
+}
+
+.car{
+    position: relative;
+    margin-top: 190px;
+    animation: moveCar 2s linear infinite alternate; 
+    }
+    
+    @keyframes moveCar {
+        from{
+            transform: translateX(400px);
+        }
+        to{
+            transform: translateX(250px);
+        }
+    }
+    
+    
+
+.text{
+    margin-top: 100px;
+    text-align: center;
+}
+
+button {
+    padding: 19px 25px;
+    background-color: rgb(10, 3, 87);
+    color: rgb(255, 255, 255);
+    margin: 40px 170px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;;
+}
+button {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #deb900;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  button:hover, .hvr-sweep-to-bottom:focus, .hvr-sweep-to-bottom:active {
+    color: white;
+  }
+button:hover:before, .hvr-sweep-to-bottom:focus:before, .hvr-sweep-to-bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+
+
