@@ -8,7 +8,10 @@
 .navbar{
     display: flex;
     justify-content: space-between;
+}.navbar__icon{
+    cursor: pointer;
 }
+
 
 .navbar__links{
     color: rgb(28, 28, 133);
@@ -68,7 +71,7 @@ ul li:hover::after {
 h1{
     top: 25%;
 }
-#texts{
+h2{
     content: "";
     height: 11px;
     background: #FFC800;
